@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Gra warcaby Sabina: Plik źródłowy WARCAAA/Gra.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Gra warcaby Sabina
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_gra_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Gra.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_gra_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_gra_8hpp.html">Gra.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_gracz_8hpp.html">Gracz.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_typy_8hpp.html">Typy.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/*destruktor*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_gra.html#add375b896f5dc3b2ddfb0d145b43f740">   18</a></span>&#160;<a class="code" href="class_gra.html#add375b896f5dc3b2ddfb0d145b43f740">Gra::~Gra</a>() {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="class_gra.html#ad34dabd89983f8c09b7806ca18e2f112">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_gra.html#ad34dabd89983f8c09b7806ca18e2f112" title="Funkcja Wyswietl_Ekran_Koncowy.">Gra::Wyswietl_Ekran_Koncowy</a>(<span class="keywordtype">bool</span> remis) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span> (remis)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;Remis i ciesz sie. Tym razem mi sie nie udalo~KOMPUTER&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((Bialy-&gt;Typ_Gracza == <a class="code" href="_gracz_8hpp.html#a84d8403928ed8dfa7734972e906970bba3d9ff4f012a751f25c5efa4f7c0b2149">CZLOWIEK</a> &amp;&amp; plansza-&gt;Biale_Krazki.empty()</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                        &amp;&amp; Czarny-&gt;Typ_Gracza == <a class="code" href="_gracz_8hpp.html#a84d8403928ed8dfa7734972e906970bba5463acbeaf79800c36dad96fd33aa02b">KOMPUTER</a>)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                        || (Czarny-&gt;Typ_Gracza == <a class="code" href="_gracz_8hpp.html#a84d8403928ed8dfa7734972e906970bba3d9ff4f012a751f25c5efa4f7c0b2149">CZLOWIEK</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                        &amp;&amp; plansza-&gt;Czarne_Krazki.empty()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                        &amp;&amp; Bialy-&gt;Typ_Gracza == <a class="code" href="_gracz_8hpp.html#a84d8403928ed8dfa7734972e906970bba5463acbeaf79800c36dad96fd33aa02b">KOMPUTER</a>))</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                cout&lt;&lt;<span class="stringliteral">&quot;Jest mi bardzo przykro, ale Cie pokonalem~ KOMPUTER&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                cout&lt;&lt; <span class="stringliteral">&quot;Tym razem Ci sie udalo. Jednorazowy fart~KOMPUTER&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        system(<span class="stringliteral">&quot;PAUSE&quot;</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="class_gra.html#a7f2a68af5fb031ec322c1dfebf1cc641">   51</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_gra.html#a7f2a68af5fb031ec322c1dfebf1cc641" title="Funkcja Rozgrywka.">Gra::Rozgrywka</a>() {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="comment">//srand(time(NULL));</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordtype">bool</span> remis = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">while</span> (!Czy_Koniec_Gry() &amp;&amp; !remis) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        plansza-&gt;Zaktualizuj();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        Czy_Wykonano_Ruch = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        Aktualny_Gracz-&gt;Stworz_Liste_Ruchow();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        <span class="keywordflow">if</span> (!Aktualny_Gracz-&gt;Lista_Ruchow.empty()) { <span class="comment">//gdy nie jest pusta czyli nie ma remisu</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                <span class="keywordflow">if</span> (Aktualny_Gracz-&gt;Typ_Gracza == <a class="code" href="_gracz_8hpp.html#a84d8403928ed8dfa7734972e906970bba5463acbeaf79800c36dad96fd33aa02b">KOMPUTER</a>) { <span class="comment">//czy gracz jest kompem</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                        pair&lt;Krazek, Punkt&gt; Ruch = Aktualny_Gracz-&gt;Wybierz_Ruch();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                        Aktualny_Gracz-&gt;Wykonaj_Ruch(Ruch);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                        <span class="keywordflow">while</span> (Aktualny_Gracz-&gt;Czy_Ruchy_To_Bicia) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                <a class="code" href="class_krazek.html" title="Krazek.hpp.">Krazek</a> krazek_bijacy = Ruch.first;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                krazek_bijacy.<a class="code" href="class_krazek.html#a22e30142c237207d7c36c711d00e54b9">x</a>() = Ruch.second.x;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                krazek_bijacy.<a class="code" href="class_krazek.html#a86e8300a948db8a9d9f94e69858cb4bf">y</a>() = Ruch.second.y;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                Aktualny_Gracz-&gt;Stworz_Liste_Bic(krazek_bijacy); <span class="comment">//gdy zrobimy bicie to sprawdza czy jest kolejne bicie dla tylko dla tego bicia.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                <span class="keywordflow">if</span> (!Aktualny_Gracz-&gt;Lista_Ruchow.empty()) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                        Ruch = Aktualny_Gracz-&gt;Wybierz_Ruch();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                        Aktualny_Gracz-&gt;Wykonaj_Ruch(Ruch);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                } <span class="keywordflow">else</span> <span class="comment">//teraz czlowieka ruchy.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                        <span class="keywordflow">while</span> (!Czy_Wykonano_Ruch) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                        <span class="keywordtype">int</span> x1,y1,x2,y2;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                        <span class="keywordtype">bool</span> Jest_Krazek=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                        <a class="code" href="class_krazek.html" title="Krazek.hpp.">Krazek</a>* pomocniczy;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                        <span class="keywordflow">while</span>(!Jest_Krazek){</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                        cout &lt;&lt;<span class="stringliteral">&quot;Ktory krazek chcesz przesunac? &quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                        cin &gt;&gt; x1 &gt;&gt; y1;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                        <span class="keywordflow">if</span>(!plansza-&gt;Czy_Jest(<a class="code" href="class_punkt.html">Punkt</a>(x1,y1)))</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                cout&lt;&lt;<span class="stringliteral">&quot;Nie ma tu krazka!&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                        <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                        plansza-&gt;Wez_Krazek(<a class="code" href="class_punkt.html">Punkt</a>(x1,y1),&amp;pomocniczy);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                        <span class="keywordflow">if</span>(pomocniczy-&gt;<a class="code" href="class_krazek.html#a5192365d6354046c4b2665c06a3bcfc3">Kolor</a> == Aktualny_Gracz-&gt;Kolor)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                Jest_Krazek=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                cout&lt;&lt;<span class="stringliteral">&quot;To nie twój krazek!&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                        cout &lt;&lt; <span class="stringliteral">&quot;Na jakie pole chcesz go przesunac? &quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                        cin &gt;&gt; x2 &gt;&gt; y2;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                        pair&lt;Krazek, Punkt&gt; Ruch = pair&lt;Krazek, Punkt&gt; (*pomocniczy,<a class="code" href="class_punkt.html">Punkt</a>(x2,y2));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                        <span class="keywordflow">if</span>(Aktualny_Gracz-&gt;Czy_Zostal_Wybrany_Poprawny_Ruch(Ruch))</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                        {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                Aktualny_Gracz-&gt;Wykonaj_Ruch(Ruch);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                Czy_Wykonano_Ruch=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                        }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                                cout&lt;&lt; <span class="stringliteral">&quot;NIE MASZ PRAWA SIE TAK RUSZYC!&quot;</span>&lt;&lt;endl;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                        };</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                <span class="keywordflow">if</span> (Aktualny_Gracz == Bialy)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                        Aktualny_Gracz = Czarny;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                        Aktualny_Gracz = Bialy;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                        } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                remis = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                Wyswietl_Ekran_Koncowy(remis);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_36593f40c3df2526682b2901d7ac83d6.html">WARCAAA</a></li><li class="navelem"><a class="el" href="_gra_8cpp.html">Gra.cpp</a></li>
+    <li class="footer">Wygenerowano N, 15 cze 2014 13:14:30 dla Gra warcaby Sabina programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

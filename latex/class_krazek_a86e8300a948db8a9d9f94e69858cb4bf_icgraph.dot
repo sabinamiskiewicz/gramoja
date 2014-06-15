@@ -1,0 +1,19 @@
+digraph "Krazek::y"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Krazek::y",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Gra::Rozgrywka",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_gra.html#a7f2a68af5fb031ec322c1dfebf1cc641",tooltip="Funkcja Rozgrywka."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip="MAIN."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Gracz::Stworz_Liste_Bic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_gracz.html#a21d16a5c1b26cb41542128c37649151d",tooltip="Stworz_Liste_Bic."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Krazek::operator==",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_krazek.html#a83dfee22f9cee979b3406fa855bbb0a8",tooltip="Przeciazenie operatora ==."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Plansza::Dodaj_Krazek",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_plansza.html#ae281651331a7fc92eb6b3431d9157ea5"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Plansza::Usun_Krazek",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_plansza.html#ac4123ef599193f61a85ff0c4e14baa9c"];
+}

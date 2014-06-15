@@ -1,0 +1,337 @@
+\hypertarget{class_gracz}{\section{Dokumentacja klasy Gracz}
+\label{class_gracz}\index{Gracz@{Gracz}}
+}
+
+
+{\ttfamily \#include $<$Gracz.\-hpp$>$}
+
+
+
+Diagram współpracy dla Gracz\-:
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gracz_a03a835243bdfecb51cda20f3b991d22a}{Gracz} (\hyperlink{_gracz_8hpp_a84d8403928ed8dfa7734972e906970bb}{\-\_\-\-Typ\-\_\-\-Gracza}, \hyperlink{_punkt_8hpp_af66113a5c012c322e61ec5429f53c13c}{\-\_\-\-Kolor}, \hyperlink{class_plansza}{Plansza} $\ast$plansza)
+\item 
+std\-::pair$<$ \hyperlink{class_krazek}{Krazek}, \hyperlink{class_punkt}{Punkt} $>$ \hyperlink{class_gracz_a10edbd9d8720297c3322b5c4e5a785d6}{Wybierz\-\_\-\-Ruch} ()
+\item 
+bool \hyperlink{class_gracz_a5f626d0cf4a34cb562bfdabfa6fc332b}{Czy\-\_\-\-Jest\-\_\-\-Bicie} (\hyperlink{class_punkt}{Punkt}, \hyperlink{class_punkt}{Punkt}, \hyperlink{class_krazek}{Krazek})
+\begin{DoxyCompactList}\small\item\em Funkcja Czy\-\_\-\-Jest\-\_\-\-Bicie. \end{DoxyCompactList}\item 
+void \hyperlink{class_gracz_a21d16a5c1b26cb41542128c37649151d}{Stworz\-\_\-\-Liste\-\_\-\-Bic} (\hyperlink{class_krazek}{Krazek})
+\begin{DoxyCompactList}\small\item\em Stworz\-\_\-\-Liste\-\_\-\-Bic. \end{DoxyCompactList}\item 
+int \hyperlink{class_gracz_a0c4ed93f42f8865b3b50337a72417d37}{Punkty\-\_\-\-Za\-\_\-\-Krazki} ()
+\begin{DoxyCompactList}\small\item\em Punkty\-\_\-\-Za\-\_\-\-Krazki. \end{DoxyCompactList}\item 
+int \hyperlink{class_gracz_ab8adf4e2259268b757f480e7309d2d0e}{Zasymuluj\-\_\-\-Ruch} (std\-::pair$<$ \hyperlink{class_krazek}{Krazek}, \hyperlink{class_punkt}{Punkt} $>$)
+\begin{DoxyCompactList}\small\item\em Zasymuluj\-\_\-\-Ruch. \end{DoxyCompactList}\item 
+int \hyperlink{class_gracz_af8b44c1dc03ef3c5ff0b210acdb84768}{Punkty} ()
+\begin{DoxyCompactList}\small\item\em Punkty. \end{DoxyCompactList}\item 
+void \hyperlink{class_gracz_a3347ee872afe47f2ffa28d36a8a18f9d}{Ulepsz\-\_\-\-Ruch} ()
+\item 
+void \hyperlink{class_gracz_a528eecc55f9be2365726f00cbf7df2f0}{Stworz\-\_\-\-Liste\-\_\-\-Ruchow} ()
+\begin{DoxyCompactList}\small\item\em Stworz\-\_\-\-Liste\-\_\-\-Ruchow. \end{DoxyCompactList}\item 
+void \hyperlink{class_gracz_af0f858812267d64657558c7221f730f7}{Wykonaj\-\_\-\-Ruch} (std\-::pair$<$ \hyperlink{class_krazek}{Krazek}, \hyperlink{class_punkt}{Punkt} $>$)
+\begin{DoxyCompactList}\small\item\em Wykonaj\-\_\-\-Ruch. \end{DoxyCompactList}\item 
+bool \hyperlink{class_gracz_a9c52c9a881936792d64a255f8639ecf5}{Czy\-\_\-\-Zostal\-\_\-\-Wybrany\-\_\-\-Poprawny\-\_\-\-Ruch} (std\-::pair$<$ \hyperlink{class_krazek}{Krazek}, \hyperlink{class_punkt}{Punkt} $>$)
+\begin{DoxyCompactList}\small\item\em Czy\-\_\-\-Zostal\-\_\-\-Wybrany\-\_\-\-Poprawny\-\_\-\-Ruch. \end{DoxyCompactList}\item 
+void \hyperlink{class_gracz_a1d761ff7d84f188fc050b73b82d20f9e}{Wyswietl\-\_\-\-Liste\-\_\-\-Ruchow} ()
+\item 
+void \hyperlink{class_gracz_a13df924e9d688fd2c989c4e1a0b43c67}{Wyczysc\-\_\-\-Liste\-\_\-\-Ruchow} ()
+\begin{DoxyCompactList}\small\item\em Wyczysc\-\_\-\-Liste\-\_\-\-Ruchow. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_gracz_abdad0e2d01ae6c1acaa0cd43d0787fc0}{$\sim$\-Gracz} ()
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_punkt_8hpp_af66113a5c012c322e61ec5429f53c13c}{\-\_\-\-Kolor} \hyperlink{class_gracz_a14711bc9e9eece5ff0acad3cc607288a}{Kolor}
+\item 
+\hyperlink{_gracz_8hpp_a84d8403928ed8dfa7734972e906970bb}{\-\_\-\-Typ\-\_\-\-Gracza} \hyperlink{class_gracz_ae04a9a2233c2191bb6f173f40b56de90}{Typ\-\_\-\-Gracza}
+\item 
+\hyperlink{class_plansza}{Plansza} $\ast$ \hyperlink{class_gracz_aa1edaa173d3d7558dfe744c290a9adde}{Plansza\-\_\-gry}
+\item 
+bool \hyperlink{class_gracz_aa3d23662e0d0d02d7e6dd52b4df81e7a}{Czy\-\_\-\-Ruchy\-\_\-\-To\-\_\-\-Bicia}
+\item 
+std\-::vector$<$ std\-::vector\\*
+$<$ std\-::pair$<$ \hyperlink{class_krazek}{Krazek}, \hyperlink{class_punkt}{Punkt} $>$ $>$ $>$ \hyperlink{class_gracz_aa7767b6d04dc28857d929b1142610e9f}{Lista\-\_\-\-Ruchow}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 22 pliku Gracz.\-hpp.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_gracz_a03a835243bdfecb51cda20f3b991d22a}{\index{Gracz@{Gracz}!Gracz@{Gracz}}
+\index{Gracz@{Gracz}!Gracz@{Gracz}}
+\subsubsection[{Gracz}]{\setlength{\rightskip}{0pt plus 5cm}Gracz\-::\-Gracz (
+\begin{DoxyParamCaption}
+\item[{{\bf \-\_\-\-Typ\-\_\-\-Gracza}}]{gracz, }
+\item[{{\bf \-\_\-\-Kolor}}]{kol, }
+\item[{{\bf Plansza} $\ast$}]{plansza}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a03a835243bdfecb51cda20f3b991d22a}
+
+
+Definicja w linii 23 pliku Gracz.\-cpp.
+
+\hypertarget{class_gracz_abdad0e2d01ae6c1acaa0cd43d0787fc0}{\index{Gracz@{Gracz}!$\sim$\-Gracz@{$\sim$\-Gracz}}
+\index{$\sim$\-Gracz@{$\sim$\-Gracz}!Gracz@{Gracz}}
+\subsubsection[{$\sim$\-Gracz}]{\setlength{\rightskip}{0pt plus 5cm}Gracz\-::$\sim$\-Gracz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_gracz_abdad0e2d01ae6c1acaa0cd43d0787fc0}
+
+
+Definicja w linii 30 pliku Gracz.\-cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_gracz_a5f626d0cf4a34cb562bfdabfa6fc332b}{\index{Gracz@{Gracz}!Czy\-\_\-\-Jest\-\_\-\-Bicie@{Czy\-\_\-\-Jest\-\_\-\-Bicie}}
+\index{Czy\-\_\-\-Jest\-\_\-\-Bicie@{Czy\-\_\-\-Jest\-\_\-\-Bicie}!Gracz@{Gracz}}
+\subsubsection[{Czy\-\_\-\-Jest\-\_\-\-Bicie}]{\setlength{\rightskip}{0pt plus 5cm}bool Gracz\-::\-Czy\-\_\-\-Jest\-\_\-\-Bicie (
+\begin{DoxyParamCaption}
+\item[{{\bf Punkt}}]{Z, }
+\item[{{\bf Punkt}}]{Do, }
+\item[{{\bf Krazek}}]{krazek}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a5f626d0cf4a34cb562bfdabfa6fc332b}
+
+
+Funkcja Czy\-\_\-\-Jest\-\_\-\-Bicie. 
+
+Sprawdzamy czy mozemy bic. Czy pionek do zbicie jest nie nasz. Czy pole za pionkiem po biciu jest w planszy Czy pole po biciu jest wolne. 
+
+Definicja w linii 41 pliku Gracz.\-cpp.
+
+\hypertarget{class_gracz_a9c52c9a881936792d64a255f8639ecf5}{\index{Gracz@{Gracz}!Czy\-\_\-\-Zostal\-\_\-\-Wybrany\-\_\-\-Poprawny\-\_\-\-Ruch@{Czy\-\_\-\-Zostal\-\_\-\-Wybrany\-\_\-\-Poprawny\-\_\-\-Ruch}}
+\index{Czy\-\_\-\-Zostal\-\_\-\-Wybrany\-\_\-\-Poprawny\-\_\-\-Ruch@{Czy\-\_\-\-Zostal\-\_\-\-Wybrany\-\_\-\-Poprawny\-\_\-\-Ruch}!Gracz@{Gracz}}
+\subsubsection[{Czy\-\_\-\-Zostal\-\_\-\-Wybrany\-\_\-\-Poprawny\-\_\-\-Ruch}]{\setlength{\rightskip}{0pt plus 5cm}bool Gracz\-::\-Czy\-\_\-\-Zostal\-\_\-\-Wybrany\-\_\-\-Poprawny\-\_\-\-Ruch (
+\begin{DoxyParamCaption}
+\item[{std\-::pair$<$ {\bf Krazek}, {\bf Punkt} $>$}]{}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a9c52c9a881936792d64a255f8639ecf5}
+
+
+Czy\-\_\-\-Zostal\-\_\-\-Wybrany\-\_\-\-Poprawny\-\_\-\-Ruch. 
+
+Sprawdzamy czy ruch wybrany jest na licie ruchow Czy jest poprawny, Mozliwy 
+
+Definicja w linii 80 pliku Gracz.\-cpp.
+
+\hypertarget{class_gracz_af8b44c1dc03ef3c5ff0b210acdb84768}{\index{Gracz@{Gracz}!Punkty@{Punkty}}
+\index{Punkty@{Punkty}!Gracz@{Gracz}}
+\subsubsection[{Punkty}]{\setlength{\rightskip}{0pt plus 5cm}int Gracz\-::\-Punkty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_af8b44c1dc03ef3c5ff0b210acdb84768}
+
+
+Punkty. 
+
+Punkty 10 za bicia (nie zaleznie od ilosci) -\/40 za bicie przeciwnika (nie zaleznie od ilosci) 
+
+Definicja w linii 376 pliku Gracz.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_gracz_a0c4ed93f42f8865b3b50337a72417d37}{\index{Gracz@{Gracz}!Punkty\-\_\-\-Za\-\_\-\-Krazki@{Punkty\-\_\-\-Za\-\_\-\-Krazki}}
+\index{Punkty\-\_\-\-Za\-\_\-\-Krazki@{Punkty\-\_\-\-Za\-\_\-\-Krazki}!Gracz@{Gracz}}
+\subsubsection[{Punkty\-\_\-\-Za\-\_\-\-Krazki}]{\setlength{\rightskip}{0pt plus 5cm}int Gracz\-::\-Punkty\-\_\-\-Za\-\_\-\-Krazki (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a0c4ed93f42f8865b3b50337a72417d37}
+
+
+Punkty\-\_\-\-Za\-\_\-\-Krazki. 
+
+Punkty za kr��ki. 15 za Z\-W\-Y\-K\-L\-Y krazek 25 za D\-A\-M\-K\-A 
+
+Definicja w linii 332 pliku Gracz.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_gracz_a21d16a5c1b26cb41542128c37649151d}{\index{Gracz@{Gracz}!Stworz\-\_\-\-Liste\-\_\-\-Bic@{Stworz\-\_\-\-Liste\-\_\-\-Bic}}
+\index{Stworz\-\_\-\-Liste\-\_\-\-Bic@{Stworz\-\_\-\-Liste\-\_\-\-Bic}!Gracz@{Gracz}}
+\subsubsection[{Stworz\-\_\-\-Liste\-\_\-\-Bic}]{\setlength{\rightskip}{0pt plus 5cm}void Gracz\-::\-Stworz\-\_\-\-Liste\-\_\-\-Bic (
+\begin{DoxyParamCaption}
+\item[{{\bf Krazek}}]{krazek}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a21d16a5c1b26cb41542128c37649151d}
+
+
+Stworz\-\_\-\-Liste\-\_\-\-Bic. 
+
+Bedzie to przydatne przy biciach wielokrotnych. Gdy nie ma bicia wielokrotnego oddaje ruch przeciwnikowi. 
+
+Definicja w linii 126 pliku Gracz.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{class_gracz_a528eecc55f9be2365726f00cbf7df2f0}{\index{Gracz@{Gracz}!Stworz\-\_\-\-Liste\-\_\-\-Ruchow@{Stworz\-\_\-\-Liste\-\_\-\-Ruchow}}
+\index{Stworz\-\_\-\-Liste\-\_\-\-Ruchow@{Stworz\-\_\-\-Liste\-\_\-\-Ruchow}!Gracz@{Gracz}}
+\subsubsection[{Stworz\-\_\-\-Liste\-\_\-\-Ruchow}]{\setlength{\rightskip}{0pt plus 5cm}void Gracz\-::\-Stworz\-\_\-\-Liste\-\_\-\-Ruchow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a528eecc55f9be2365726f00cbf7df2f0}
+
+
+Stworz\-\_\-\-Liste\-\_\-\-Ruchow. 
+
+Tworzymy liste ruchow dla wszystkich pionkow dla gracza. 
+
+Definicja w linii 173 pliku Gracz.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_gracz_a3347ee872afe47f2ffa28d36a8a18f9d}{\index{Gracz@{Gracz}!Ulepsz\-\_\-\-Ruch@{Ulepsz\-\_\-\-Ruch}}
+\index{Ulepsz\-\_\-\-Ruch@{Ulepsz\-\_\-\-Ruch}!Gracz@{Gracz}}
+\subsubsection[{Ulepsz\-\_\-\-Ruch}]{\setlength{\rightskip}{0pt plus 5cm}void Gracz\-::\-Ulepsz\-\_\-\-Ruch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_gracz_a3347ee872afe47f2ffa28d36a8a18f9d}
+
+
+Definicja w linii 36 pliku Gracz.\-hpp.
+
+\hypertarget{class_gracz_a10edbd9d8720297c3322b5c4e5a785d6}{\index{Gracz@{Gracz}!Wybierz\-\_\-\-Ruch@{Wybierz\-\_\-\-Ruch}}
+\index{Wybierz\-\_\-\-Ruch@{Wybierz\-\_\-\-Ruch}!Gracz@{Gracz}}
+\subsubsection[{Wybierz\-\_\-\-Ruch}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ {\bf Krazek}, {\bf Punkt} $>$ Gracz\-::\-Wybierz\-\_\-\-Ruch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a10edbd9d8720297c3322b5c4e5a785d6}
+
+
+Definicja w linii 56 pliku Gracz.\-cpp.
+
+\hypertarget{class_gracz_a13df924e9d688fd2c989c4e1a0b43c67}{\index{Gracz@{Gracz}!Wyczysc\-\_\-\-Liste\-\_\-\-Ruchow@{Wyczysc\-\_\-\-Liste\-\_\-\-Ruchow}}
+\index{Wyczysc\-\_\-\-Liste\-\_\-\-Ruchow@{Wyczysc\-\_\-\-Liste\-\_\-\-Ruchow}!Gracz@{Gracz}}
+\subsubsection[{Wyczysc\-\_\-\-Liste\-\_\-\-Ruchow}]{\setlength{\rightskip}{0pt plus 5cm}void Gracz\-::\-Wyczysc\-\_\-\-Liste\-\_\-\-Ruchow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a13df924e9d688fd2c989c4e1a0b43c67}
+
+
+Wyczysc\-\_\-\-Liste\-\_\-\-Ruchow. 
+
+Usuwamy wszystko z listy ruchow gracza. 
+
+Definicja w linii 286 pliku Gracz.\-cpp.
+
+\hypertarget{class_gracz_af0f858812267d64657558c7221f730f7}{\index{Gracz@{Gracz}!Wykonaj\-\_\-\-Ruch@{Wykonaj\-\_\-\-Ruch}}
+\index{Wykonaj\-\_\-\-Ruch@{Wykonaj\-\_\-\-Ruch}!Gracz@{Gracz}}
+\subsubsection[{Wykonaj\-\_\-\-Ruch}]{\setlength{\rightskip}{0pt plus 5cm}void Gracz\-::\-Wykonaj\-\_\-\-Ruch (
+\begin{DoxyParamCaption}
+\item[{std\-::pair$<$ {\bf Krazek}, {\bf Punkt} $>$}]{}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_af0f858812267d64657558c7221f730f7}
+
+
+Wykonaj\-\_\-\-Ruch. 
+
+Sprawdza jaki jest aktualny krazek. Sprawdza czy ruch jest biciem Jesli tak to wykonkuje bicie Jak nie to zwykly ruch wykonuje o ile mozliwy Gdy na ostatnim polu to zamienia na D\-A\-M\-K\-A 
+
+Definicja w linii 98 pliku Gracz.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_gracz_a1d761ff7d84f188fc050b73b82d20f9e}{\index{Gracz@{Gracz}!Wyswietl\-\_\-\-Liste\-\_\-\-Ruchow@{Wyswietl\-\_\-\-Liste\-\_\-\-Ruchow}}
+\index{Wyswietl\-\_\-\-Liste\-\_\-\-Ruchow@{Wyswietl\-\_\-\-Liste\-\_\-\-Ruchow}!Gracz@{Gracz}}
+\subsubsection[{Wyswietl\-\_\-\-Liste\-\_\-\-Ruchow}]{\setlength{\rightskip}{0pt plus 5cm}void Gracz\-::\-Wyswietl\-\_\-\-Liste\-\_\-\-Ruchow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_a1d761ff7d84f188fc050b73b82d20f9e}
+\hypertarget{class_gracz_ab8adf4e2259268b757f480e7309d2d0e}{\index{Gracz@{Gracz}!Zasymuluj\-\_\-\-Ruch@{Zasymuluj\-\_\-\-Ruch}}
+\index{Zasymuluj\-\_\-\-Ruch@{Zasymuluj\-\_\-\-Ruch}!Gracz@{Gracz}}
+\subsubsection[{Zasymuluj\-\_\-\-Ruch}]{\setlength{\rightskip}{0pt plus 5cm}int Gracz\-::\-Zasymuluj\-\_\-\-Ruch (
+\begin{DoxyParamCaption}
+\item[{std\-::pair$<$ {\bf Krazek}, {\bf Punkt} $>$}]{}
+\end{DoxyParamCaption}
+)}}\label{class_gracz_ab8adf4e2259268b757f480e7309d2d0e}
+
+
+Zasymuluj\-\_\-\-Ruch. 
+
+Symulujemy ruch By sprawdzic stan punktowy I ocenic najkorzystniejszy ruch. 
+
+Definicja w linii 302 pliku Gracz.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_gracz_aa3d23662e0d0d02d7e6dd52b4df81e7a}{\index{Gracz@{Gracz}!Czy\-\_\-\-Ruchy\-\_\-\-To\-\_\-\-Bicia@{Czy\-\_\-\-Ruchy\-\_\-\-To\-\_\-\-Bicia}}
+\index{Czy\-\_\-\-Ruchy\-\_\-\-To\-\_\-\-Bicia@{Czy\-\_\-\-Ruchy\-\_\-\-To\-\_\-\-Bicia}!Gracz@{Gracz}}
+\subsubsection[{Czy\-\_\-\-Ruchy\-\_\-\-To\-\_\-\-Bicia}]{\setlength{\rightskip}{0pt plus 5cm}bool Gracz\-::\-Czy\-\_\-\-Ruchy\-\_\-\-To\-\_\-\-Bicia}}\label{class_gracz_aa3d23662e0d0d02d7e6dd52b4df81e7a}
+
+
+Definicja w linii 27 pliku Gracz.\-hpp.
+
+\hypertarget{class_gracz_a14711bc9e9eece5ff0acad3cc607288a}{\index{Gracz@{Gracz}!Kolor@{Kolor}}
+\index{Kolor@{Kolor}!Gracz@{Gracz}}
+\subsubsection[{Kolor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-Kolor} Gracz\-::\-Kolor}}\label{class_gracz_a14711bc9e9eece5ff0acad3cc607288a}
+
+
+Definicja w linii 24 pliku Gracz.\-hpp.
+
+\hypertarget{class_gracz_aa7767b6d04dc28857d929b1142610e9f}{\index{Gracz@{Gracz}!Lista\-\_\-\-Ruchow@{Lista\-\_\-\-Ruchow}}
+\index{Lista\-\_\-\-Ruchow@{Lista\-\_\-\-Ruchow}!Gracz@{Gracz}}
+\subsubsection[{Lista\-\_\-\-Ruchow}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::vector$<$std\-::pair$<${\bf Krazek},{\bf Punkt}$>$ $>$ $>$ Gracz\-::\-Lista\-\_\-\-Ruchow}}\label{class_gracz_aa7767b6d04dc28857d929b1142610e9f}
+
+
+Definicja w linii 28 pliku Gracz.\-hpp.
+
+\hypertarget{class_gracz_aa1edaa173d3d7558dfe744c290a9adde}{\index{Gracz@{Gracz}!Plansza\-\_\-gry@{Plansza\-\_\-gry}}
+\index{Plansza\-\_\-gry@{Plansza\-\_\-gry}!Gracz@{Gracz}}
+\subsubsection[{Plansza\-\_\-gry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plansza}$\ast$ Gracz\-::\-Plansza\-\_\-gry}}\label{class_gracz_aa1edaa173d3d7558dfe744c290a9adde}
+
+
+Definicja w linii 26 pliku Gracz.\-hpp.
+
+\hypertarget{class_gracz_ae04a9a2233c2191bb6f173f40b56de90}{\index{Gracz@{Gracz}!Typ\-\_\-\-Gracza@{Typ\-\_\-\-Gracza}}
+\index{Typ\-\_\-\-Gracza@{Typ\-\_\-\-Gracza}!Gracz@{Gracz}}
+\subsubsection[{Typ\-\_\-\-Gracza}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-\-Typ\-\_\-\-Gracza} Gracz\-::\-Typ\-\_\-\-Gracza}}\label{class_gracz_ae04a9a2233c2191bb6f173f40b56de90}
+
+
+Definicja w linii 25 pliku Gracz.\-hpp.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+W\-A\-R\-C\-A\-A\-A/\hyperlink{_gracz_8hpp}{Gracz.\-hpp}\item 
+W\-A\-R\-C\-A\-A\-A/\hyperlink{_gracz_8cpp}{Gracz.\-cpp}\end{DoxyCompactItemize}

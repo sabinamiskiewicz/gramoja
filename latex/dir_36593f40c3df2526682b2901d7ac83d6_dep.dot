@@ -1,0 +1,6 @@
+digraph "WARCAAA/" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_36593f40c3df2526682b2901d7ac83d6 [shape=box, label="WARCAAA", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_36593f40c3df2526682b2901d7ac83d6.html"];
+}

@@ -1,0 +1,15 @@
+digraph "Gracz::Zasymuluj_Ruch"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Gracz::Zasymuluj_Ruch",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Gracz::Wykonaj_Ruch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_gracz.html#af0f858812267d64657558c7221f730f7",tooltip="Wykonaj_Ruch."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Gracz::Punkty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_gracz.html#af8b44c1dc03ef3c5ff0b210acdb84768",tooltip="Punkty."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Gracz::Stworz_Liste\l_Ruchow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_gracz.html#a528eecc55f9be2365726f00cbf7df2f0",tooltip="Stworz_Liste_Ruchow."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Gracz::Punkty_Za_Krazki",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_gracz.html#a0c4ed93f42f8865b3b50337a72417d37",tooltip="Punkty_Za_Krazki."];
+}
